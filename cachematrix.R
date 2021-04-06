@@ -20,7 +20,7 @@ makeCacheMatrix <- function(c = matrix()) {
 ## The cacheSolve function solves or calculates the cache of an inverse matrix returned by the makeCacheMatrix function.
 
 cacheSolve <- function(c, ...) {
-  inv<-c$getInverse()
+  inv<-c$gettheinverseof()
   if(!is.null(inv)){
     message("getting cached data")
     return(inv)
